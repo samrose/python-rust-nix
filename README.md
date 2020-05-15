@@ -1,18 +1,18 @@
-##What this project does
+## What this project does
 
-###The Python and rust part:
+### The Python and rust part:
 
 This project is building on the 2017 experiment at https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/  
 
 Just like in that blog post, I am building a pure python counter of pairs of repeated chars, a python regex implementation, and a Rust library with python wrappers using https://github.com/dgrunwald/rust-cpython 
 
-###the f21-nixpkgs part:
+### The f21-nixpkgs part:
 This project builds a reproducible environment combining a `rust 1.41.0-nightly` with 
 In this case I am incorporating this with a local nix development setup, and an upstream `*-nixpkgs` which is a custom subset of the nixpkgs repository that in turn inherits and uses `nixpkgs` ( see https://github.com/NixOS/nixpkgs ).
 
 Eventually, this project itself can become a package in the upstream f21-nixpkgs that it inherits.  
 
-###The results
+### The results
 
 As you can see below, using Rust in python makes the same operation 10x faster than Python Regex, and 21x faster than pure Python!
 
@@ -45,6 +45,6 @@ Legend:
 ```
 
 
-###Next steps
+### Next steps
 
 The next step will be to use this approach in some django project apps to cut down execution time of complex math and image processing operations. And, to wire up a https://github.com/NixOS/hydra build farm to manage distributed nodes running this software.
