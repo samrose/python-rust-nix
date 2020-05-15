@@ -1,0 +1,12 @@
+[package]
+name = "pyext-rustlib"
+version = "0.1.0"
+authors = ["samrose <samuel.rose@gmail.com>"]
+
+[lib]
+name = "myrustlib"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+version = "0.5"
+features = ["extension-module"]
