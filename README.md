@@ -7,7 +7,7 @@ This project is building on the 2017 experiment at https://developers.redhat.com
 Just like in that blog post, I am building a pure python counter of pairs of repeated chars, a python regex implementation, and a Rust library with python wrappers using https://github.com/dgrunwald/rust-cpython 
 
 ### The f21-nixpkgs part:
-This project builds a reproducible environment combining a `rust 1.41.0-nightly` with 
+This project builds a reproducible environment combining a `rust 1.41.0-nightly` with python3.
 In this case I am incorporating this with a local nix development setup, and an upstream `*-nixpkgs` which is a custom subset of the nixpkgs repository that in turn inherits and uses `nixpkgs` ( see https://github.com/NixOS/nixpkgs ).
 
 Eventually, this project itself can become a package in the upstream f21-nixpkgs that it inherits.  
