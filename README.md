@@ -47,4 +47,4 @@ Legend:
 
 ### Next steps
 
-The next step will be to use this approach in some django project apps to cut down execution time of complex math and image processing operations. And, to wire up a https://github.com/NixOS/hydra build farm to manage distributed nodes running this software.
+The next step will be to use this approach in some django project apps to cut down execution time of complex math and image processing operations. And, to wire up a https://github.com/NixOS/hydra build farm to manage builds for distributed nodes running this software.
